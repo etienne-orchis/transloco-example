@@ -1,6 +1,17 @@
+<h1>Basic example</h1>
 <ng-container *transloco="let t">
   <p>{{ t("hello", { name: "John" }) }}</p>
   <p>{{ t("welcome") }}</p>
+</ng-container>
+
+<h1>With nested JSON</h1>
+<ng-container *transloco="let t; prefix: 'app.dashboard'">
+  <h3>{{ t("title") }}</h3>
+  <p>{{ t("greeting", { name: "John" }) }}</p>
+
+  <h3>Statistics</h3>
+  <p>{{ t("stats.users", { count: 150 }) }}</p>
+  <p>{{ t("stats.revenue", { amount: 2000 }) }}</p>
 </ng-container>
 
 <button (click)="changeLang('en')">English</button>

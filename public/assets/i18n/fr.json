@@ -1,4 +1,14 @@
 {
   "hello": "Bonjour, {{name}}!",
-  "welcome": "Bienvenue sur Transloco!"
+  "welcome": "Bienvenue sur Transloco!",
+  "app": {
+    "dashboard": {
+      "title": "Tableau de bord",
+      "greeting": "Bonjour, {{name}}!",
+      "stats": {
+        "users": "Utilisateurs totaux : {{count}}",
+        "revenue": "Revenu : {{amount}} €"
+      }
+    }
+  }
 }

@@ -1,4 +1,14 @@
 {
   "hello": "Hello, {{name}}!",
-  "welcome": "Welcome to Transloco!"
+  "welcome": "Welcome to Transloco!",
+  "app": {
+    "dashboard": {
+      "title": "Dashboard",
+      "greeting": "Hello, {{name}}!",
+      "stats": {
+        "users": "Total Users: {{count}}",
+        "revenue": "Revenue: ${{amount}}"
+      }
+    }
+  }
 }
