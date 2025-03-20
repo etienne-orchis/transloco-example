@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [TranslocoModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'transloco-example';
+
+  constructor(private readonly translocoService: TranslocoService) {}
+
+  changeLang(lang: string) {
+    this.translocoService.setActiveLang(lang);
+  }
 }

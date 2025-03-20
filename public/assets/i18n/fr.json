@@ -1,0 +1,4 @@
+{
+  "hello": "Bonjour, {{name}}!",
+  "welcome": "Bienvenue sur Transloco!"
+}
